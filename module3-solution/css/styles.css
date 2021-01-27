@@ -1,0 +1,33 @@
+.navbar {
+  background-color: black;
+}
+
+#header-div {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#navbar-menu-button {
+  background-color: red;
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+#navbar-menu-button li {
+  border-bottom: 1px black solid;
+}
+
+#navbar-menu-button li:nth-child(3) {
+  border-bottom: none;
+}
+
+#page-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#content {
+  background-color: yellow;
+  height: 1000px;
+  margin-top: 50px;
+}
