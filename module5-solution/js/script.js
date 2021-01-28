@@ -13,7 +13,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtmlUrl = "https://github.com/arjitkansal/coursera-course-webD/tree/master/module5-solution/snippets/home-snippet.html";
+var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
@@ -115,8 +115,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
 
-      var temp = "randomCategoryShortName";
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, temp, chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", `'${chosenCategoryShortName}'`);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
